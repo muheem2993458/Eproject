@@ -1,16 +1,213 @@
 body{
-    margin: 0px;
-    padding: 0px;
-    
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+/* banner works starts here */
+.bannerr{
+    background-image: url(wall-art-7822529_1280.jpg);
+    background-size: cover;
+    background-repeat: none;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.buy_now{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    color: #000;
+    background-color: rgba(255, 196, 124, 0.962);
+}
+.buy_now:hover{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    cursor: pointer;
+    height: 40px;
+    width: 160px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    color: #000;
+    background-color: rgb(252, 201, 157);
+    transition: 0.5s;
+}
+
+.textt{
+    color: #f0f0f0;
+   text-shadow: 10px 10px 10px  black;
 }
 li{
     margin-left:40px ;
     font-size: 20px;
 }
-.backgroundimg{
+/* .backgroundimg{
     background-image: url(wall-art-7822529_1280.jpg);
     height:85vh;
     width: 100%;
-    border: 1px solid black;
+    
 ;
+} */
+ul li a:hover{
+    
+    border-radius: 20px;
+    background-color: rgba(255, 196, 124, 0.877);
 }
+.cart{
+    font-size: 30px;
+    width: 60px;
+}
+.boxe {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    height: 20vh;
+}
+
+.box {
+    box-shadow: 10px 10px 5px grey;
+    text-align: center;
+    width: 14vw;
+    height: 80%;
+    /* border: 3px solid green; */
+
+}
+
+.box img {
+    height: 80%;
+    width: 80%;
+}
+
+.feature {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.feature p {
+    color: #615f5f;
+    font-weight: bold;
+}
+
+.feature h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* cards work start here */
+.card_head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    border: 1px solid #000000;
+}
+.card_h{
+    width: 33%;
+    height: 100%;
+    border: 1px solid #000000;
+    
+}
+
+.maincard{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90vh;
+   
+}
+.cardinside{
+    margin-left: 10px;
+    width: 33%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+   
+
+}
+.cardtext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+margin-top: 8px;
+padding: 0%;
+    /* border: 1px solid #000000; */
+}
+.card
+hr{
+    margin: 0%;
+    padding: 0%;
+}
+.cardamount{
+    margin-top: 20px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+}
+.card_img img{
+    border-radius: 9px;
+    display: inline-block;
+    margin:auto 25px;
+    height:65vh ;
+    width: 90%
+    ;
+}
+.cardend{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    /* border: 1px solid #000; */
+    
+}
+.buy{
+margin-top: 20px;
+margin-left: 20px;
+width: 70%;
+/* border: 1px solid #000; */
+height: 80%;
+}
+.buy a{
+    text-decoration: none;
+    color: peru;
+}
+.buy a:hover{
+    transition: 0.5s;
+    color: #000;
+}
+.seemore{
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    /* border: 1px solid #000; */
+    height: 80%;
+}
+.seemore a{
+    color: peru;
+    text-decoration: none;
+}
+
+.seemore a:hover{
+    transition: 0.5s;
+    color: #000;
+}
+ 
