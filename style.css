@@ -233,7 +233,7 @@ transition: 0.3s;
     font-size: 30px;
 }
 
-.loader_main {
+/* .loader_main {
     width: 100%;
     text-align: center;
     margin-top: 140px;
@@ -248,19 +248,12 @@ transition: 0.3s;
     border-left: 16px solid #f26522;
     width: 120px;
     height: 120px;
-    /* -webkit-animation: spin 2s linear infinite; */
+    
+
     animation: spin 6s linear infinite;
     margin: 0 auto;
 }
 
-/* @-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-} */
 
 @keyframes spin {
     0% {
@@ -269,5 +262,62 @@ transition: 0.3s;
     100% {
         transform: rotate(360deg);
     }
-}
+} */
  
+
+
+.gallery_mcard{
+    border-radius: 40px;
+    border: 1px solid black;
+    height: 60vh;
+    width: 90%;
+    margin-left: 84px;
+    
+}
+.gallery_inner{
+    display: flex;
+    /* justify-content: center; */
+    /* padding-left: 40px; */
+    /* border: 1px solid black; */
+    height: 50%;
+    width: 100%;
+    border-radius: 40px;
+}
+.innerone{
+    border-radius: 40px;
+    /* margin-left: 10px; */
+    border: 1px solid black;
+    width: 23vw;
+    height: 100%;
+}
+.innertwo{
+    margin-left: 10px;
+    border-radius: 20px;
+    width: 30vw;
+    height: 100%;
+    border: 1px solid black;
+    
+}
+.innerthree{
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 30vw;
+    border: 1px solid black;
+    height: 100%;
+    
+}
+.innerfour{
+    border-radius: 40px;
+    
+    margin-left: 10px;
+    width: 23vw;
+    border: 1px solid black;
+    height: 100%;
+
+}
+.gallery_button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
