@@ -273,13 +273,13 @@ transition: 0.3s;
 
 
 .gallery_mcard{
-    background-color: #615f5f;
+    
     border-radius: 40px;
-    /* border: 1px solid black; */
-    background-image: url(Screenshot\ 2025-01-17\ 194357.png);
+    
+    background-image: url(ss.png);
     opacity: 0.8.5;
     background-size: cover;
-    height: 67vh;
+    height: 70vh;
     width: 95%;
     margin-left: 45px;
     display: flex;
@@ -317,59 +317,74 @@ transition: 0.3s;
     border-radius: 10px;
     
 }
-
-.gallery_inner{
-    /* margin-bottom: 10px; */
-    
- 
-    z-index: -1;
+.reveiw{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form_main{
+    padding-left: 200px;
+    /* border: 2px solid red; */
+    width: 99vw;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formee{
+    padding-left: 30px;
+    padding-top:30px ;
     /* justify-content: center; */
-    /* padding-left: 40px; */
-    /* border: 1px solid black; */
-    height: 50%;
-    width: 100%;
-    border-radius: 40px;
+    /* align-items: center; */
+    /* padding-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid red; */
+}
+.last{
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid red; */
+}
+.formee p{
+    font-size: 20px;
+    color: grey;
+}
+.formee input{
+    margin-top: 20px;
+    width: 500px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+}
+.formee .mes{
+    height: 100px;
+    
+}
+.formee button{
+    height: 40px;
+    width: 508px;
+    color: white;
+    background-color: black;
+    font-size: 24px;
+}
+#hehe{
+    width: 493px;
+    /* height: 20px; */
+}
+.formee form{
+    box-shadow: 10px 5px 10px rgb(92, 92, 92);
+    background-color: white;
+    padding-left: 20px;
+    border: 1px solid black;
+    width: 540px;
+    height: 490px;
 }
 
-.innerone{
-    background-image: url(sofa-living-room-decorated-with-brazilian-folklore-design_23-2150794203.avif);
-    background-size: cover;
-    border-radius: 40px;
-    /* margin-left: 10px; */
-    /* border: 1px solid black; */
-    width: 23vw;
-    height: 100%;
-}
-.innertwo{
-    background-image: url(indoor-plants-studio.jpg);
-    background-size: cover;
-    margin-left: 10px;
-    border-radius: 20px;
-    width: 30vw;
-    height: 100%;
-    /* border: 1px solid black; */
-    
-}
-.innerthree{
-    background-image: url(interior-design-with-plants.jpg);
-    background-size: cover;
-    border-radius: 10px;
-    margin-left: 10px;
-    width: 30vw;
-    /* border: 1px solid black; */
-    height: 100%;
-    
-}
-.innerfour{
-    background-image: url(stylish-interior-living-room-with-design-armchair-vintage-commode-mirror-shelf-tropical-leaves-coffee-table-plants-decoration-carpet-persnoal-accessories-home-decor_431307-1176.avif);
-    background-size: cover;
-    border-radius: 40px;
-    
-    margin-left: 10px;
-    width: 23vw;
-    /* border: 1px solid black; */
-    height: 100%;
 
-}
+
+
+
 
