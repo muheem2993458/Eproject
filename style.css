@@ -2,6 +2,7 @@ body{
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
+    height: 1000vh;
 }
 /* banner works starts here */
 .bannerr{
@@ -26,7 +27,11 @@ text-align: center;
     color: #000;
     background-color: rgba(255, 196, 124, 0.962);
 }
+.but_now button:hover{
+    transition: all 0.2s;
+}
 .buy_now:hover{
+    transition: all 0.2s;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 22px;
     cursor: pointer;
@@ -36,7 +41,7 @@ text-align: center;
     border-radius: 20px;
     color: #000;
     background-color: rgb(252, 201, 157);
-    transition: 0.5s;
+  
 }
 
 .textt{
@@ -55,7 +60,8 @@ li{
 ;
 } */
 ul li a:hover{
-    transition: 0.5s;
+    transition: all 0.5s;
+
     border-radius: 20px;
     background-color: rgba(255, 196, 124, 0.877);
 }
@@ -267,14 +273,56 @@ transition: 0.3s;
 
 
 .gallery_mcard{
+    background-color: #615f5f;
     border-radius: 40px;
-    border: 1px solid black;
-    height: 60vh;
-    width: 90%;
-    margin-left: 84px;
+    /* border: 1px solid black; */
+    background-image: url(Screenshot\ 2025-01-17\ 194357.png);
+    opacity: 0.8.5;
+    background-size: cover;
+    height: 67vh;
+    width: 95%;
+    margin-left: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.gallery_mcard button{
+    cursor: pointer;
+    background-color: rgb(255, 211, 166);
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+.gallery_mcard a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+.gallery_mcard a:hover{
+    color: #000;
+    cursor: pointer;
+}
+.gallery_mcard button:hover{
+    cursor: pointer;
+    background-color: rgb(245, 202, 159);
+    height: 50px;
+    width: 190px;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 10px;
     
 }
+
 .gallery_inner{
+    /* margin-bottom: 10px; */
+    
+ 
+    z-index: -1;
     display: flex;
     /* justify-content: center; */
     /* padding-left: 40px; */
@@ -283,41 +331,45 @@ transition: 0.3s;
     width: 100%;
     border-radius: 40px;
 }
+
 .innerone{
+    background-image: url(sofa-living-room-decorated-with-brazilian-folklore-design_23-2150794203.avif);
+    background-size: cover;
     border-radius: 40px;
     /* margin-left: 10px; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 23vw;
     height: 100%;
 }
 .innertwo{
+    background-image: url(indoor-plants-studio.jpg);
+    background-size: cover;
     margin-left: 10px;
     border-radius: 20px;
     width: 30vw;
     height: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     
 }
 .innerthree{
+    background-image: url(interior-design-with-plants.jpg);
+    background-size: cover;
     border-radius: 10px;
     margin-left: 10px;
     width: 30vw;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 100%;
     
 }
 .innerfour{
+    background-image: url(stylish-interior-living-room-with-design-armchair-vintage-commode-mirror-shelf-tropical-leaves-coffee-table-plants-decoration-carpet-persnoal-accessories-home-decor_431307-1176.avif);
+    background-size: cover;
     border-radius: 40px;
     
     margin-left: 10px;
     width: 23vw;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 100%;
 
 }
-.gallery_button{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+
