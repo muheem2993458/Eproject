@@ -60,7 +60,8 @@ ul li a:hover{
     background-color: rgba(255, 196, 124, 0.877);
 }
 .cart{
-    font-size: 30px;
+    padding-left: 30px;
+    font-size: 20px;
     width: 60px;
 }
 .boxe {
@@ -114,8 +115,8 @@ ul li a:hover{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 10vh;
-    border: 1px solid #000000;
+    height: 237px;
+    /* border: 1px solid #000000; */
 }
 
 
