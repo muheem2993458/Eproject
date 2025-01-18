@@ -2,7 +2,6 @@ body{
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
-    height: 1000vh;
 }
 /* banner works starts here */
 .bannerr{
@@ -343,11 +342,8 @@ transition: 0.3s;
     width: 50%;
     /* border: 1px solid red; */
 }
-.last{
-    height: 100%;
-    width: 50%;
-    /* border: 1px solid red; */
-}
+
+
 .formee p{
     font-size: 20px;
     color: grey;
@@ -358,10 +354,6 @@ transition: 0.3s;
     height: 40px;
     background-color: white;
     border: 1px solid black;
-}
-.formee .mes{
-    height: 100px;
-    
 }
 .formee button{
     height: 40px;
@@ -384,7 +376,88 @@ transition: 0.3s;
 }
 
 
+/* footer section starts here */
 
+footer{
+    margin-top: 100px;
+    background-color:rgb(244, 248, 250);
+    display: flex;
 
-
+    height: 30vh;
+    /* border: 1px solid red; */
+}
+.footlogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    width: 25%;
+    height: 100%;
+}
+.footlogo h1{
+    padding: 10px 0px;
+}
+.footlogo p{
+    padding: 7px 0px;
+}
+.footsec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    width: 20%;
+    height: 100%;
+}
+.footsec h1{
+    padding: -2px 0px;
+}
+.footsec p{
+    font-size: 18px;
+    padding: -2px 0px;}
+.footfour{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    width: 35%;
+}
+.footfour p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pp{
+    display: flex;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    /* border: 1px solid green; */
+}
+.eee{
+    /* border: 1px solid green; */
+    width: 35%;
+    height: 50px;
+}
+.rrr{
+    /* border: 1px solid green; */
+    width: 35%;
+    height: 50px;
+}
+.eee img{
+    height: 100%;
+    width: 100%;
+}
+.rrr img{
+    height: 100%;
+    width: 100%;
+}
+.footfour .last{
+    margin-top: 20px;
+}
+footer{
+    box-shadow: 0px -4px 10px gray;
+}
 
