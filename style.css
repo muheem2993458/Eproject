@@ -238,10 +238,10 @@ transition: 0.3s;
     font-size: 30px;
 }
 
-/* .loader_main {
+.loader_main {
     width: 100%;
     text-align: center;
-    margin-top: 140px;
+    margin-top: 40px;
 }
 
 .loader {
@@ -267,7 +267,7 @@ transition: 0.3s;
     100% {
         transform: rotate(360deg);
     }
-} */
+}
  
 
 
@@ -379,11 +379,11 @@ transition: 0.3s;
 /* footer section starts here */
 
 footer{
-    margin-top: 100px;
+    margin-top: 60px;
     background-color:rgb(244, 248, 250);
     display: flex;
 
-    height: 30vh;
+    height: 40vh;
     /* border: 1px solid red; */
 }
 .footlogo{
