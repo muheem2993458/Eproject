@@ -2,170 +2,105 @@
     margin: 0%;
 
 }
-
-nav {
-    background-color: white;
-    /* box-shadow: 10px 15px 20px rgb(0, 0, 0); */
-    display: flex;
-    /* border: 2px solid green; */
-    height: 10vh;
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
-.logo {
+ .main{
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    width: 20vw;
-    /* border: 1px solid black; */
+    border: 1px solid black;
+    height: 98vh;
+    width: 99vw;
+}
+.main1{
+    border: 1px solid black;
+    position: relative;
+    left: 145px;
+    top: 12px;
+    height: 40vh;
+    width: 25vw;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
 }
 
-.links {
+.main2{
+    border-radius: 25px;
     display: flex;
-    justify-content: space-evenly;
-    width: 40vw;
-    align-items: center;
-    /* border: 1px solid black; */
-    font-size: 20px;
-}
-.links a{
-    color: black;
-    text-decoration: none;
-}
-
-.search {
-    color: aliceblue;
-    width: 15vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid black; */
-}
-
-.search input {
-    color: whi;
-    background-color: black;
-    padding-left: 40px;
-    font-size: 20px;
-    width: 100px;
-    height: 20px;
-}
-
-.icon {
-    color: white;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 26px;
-    width: 25px;
-    font-size: 19px;
-    padding-left: 10px grey;
-    /* border: 1px solid black; */
-    /* background-color: black; */
-
-}
-
-.cart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* border: 1px solid black; */
-}
-
-.login {
-    width: 20vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* header ends here */
-
-/* banner */
-
-.bannerst {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(helo.png);
-    background-size: cover;
-    height: 28vh;
-    /* border: 1px solid red; */
-}
-
-.bannerst h2 {
-    font-size: 70px;
-    color: white;
-
-
-}
-
-.bannerst p {
-
-    color: white;
-
-}
-.mainsec{
-    display: flex;
-    /* border: 1px solid red; */
-    height: 65vh;
-    width: 98vw;
-}
-.textone{
+    margin-right: 140px;
+    height: 80%;
+    width: 80%;
+    border: 1px solid black;
     
-    padding-left: 10px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid red; */
-    width: 40%;
-    height: 100%;
-
 }
-.map{
+.main3{
+    background-image: url(flat-lay-tropical-palm-leaves-yellow-copy-space-background-summer-concept.jpg);
+    background-size: contain;
+        border-radius: 25px 0 0 25px;
+     border: 1px solid black;
+     height: 100%;
+     width: 35%;
+    }
+    .main4{
+        background-color: rgb(248, 248, 248);
+        border-radius: 0px 25px 25px 0px;
+        /* border: 1px solid rgb(231, 48, 48); */
+        height: 100%;
+        width: 65%;
+    }
+    .location{
+        display: flex;
+     /* border: 1px solid black; */
+     height: 8vh;
+     width: 100%;
+     border-radius: 25px 25px 0 0;
+    }
+    .icon{
+        border-radius: 25px 0 0 0;
+        /* border: 1px solid black; */
+        height: 100%;
+        width: 20%;
+        
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .txt{
+        letter-spacing: 5px;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px 25px 0px 0;
+        height: 100%;
+        width: 80%;
+     /* border: 1px solid black; */
+ }
+ .frm{
     /* border: 1px solid red; */
+    height: 5vh;
+    width: 100%;
+ }
+ .frm input{
+    margin-left: 55px;
+    text-align: center;
     width: 60%;
     height: 100%;
-
-}
-.had h4{
-    padding: 0px 40px;
-    margin-top:40px ;
-    /* text-align: center; */
-    color: gray;
-
-}
-
-.had h2{
-    padding: 0px 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.had ul li{
-    list-style: none;
-    padding-bottom: 20px;
-}
-/* map */
-.map iframe{
     border: none;
-width: 670px;
-height: 500px;
-}
-.map{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.boxs{
-    display: flex;
-    height: 60vh;
-    width: 100vw;
-    /* border: 1px solid red; */
+    border-bottom: 1px solid black;
+ }
+.h-top{
+    margin-top: 30px;
+    height: 6vh;
+    width: 100%;
+    text-align: center;
 }
 .form{
+    
     padding-left: 30px;
     padding-top:30px ;
     /* justify-content: center; */
@@ -173,13 +108,8 @@ height: 500px;
     /* padding-top: 20px; */
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 50%;
-    /* border: 1px solid red; */
-}
-.last{
-    height: 100%;
-    width: 50%;
+    height: 83%;
+    width: 93%;
     /* border: 1px solid red; */
 }
 .form p{
@@ -188,8 +118,8 @@ height: 500px;
 }
 .form input{
     margin-top: 20px;
-    width: 500px;
-    height: 40px;
+    width: 40vh;
+    height: 3vh;
     background-color: white;
     border: 1px solid black;
 }
@@ -198,172 +128,21 @@ height: 500px;
     
 }
 .form button{
-    height: 40px;
-    width: 508px;
+    border-radius: 20px;
+    margin-left: 60px;
+    height: 6vh;
+    width: 20vw;
     color: white;
     background-color: black;
     font-size: 24px;
 }
-#hehe{
-    width: 493px;
-    /* height: 20px; */
-}
 form{
+    
+    border-radius: 15px;
     box-shadow: 10px 5px 10px rgb(92, 92, 92);
     background-color: white;
     padding-left: 20px;
     border: 1px solid black;
-    width: 540px;
-    height: 490px;
-}
-.last{
-    /* align-items: center; */
-    /* justify-content: center; */
-    display: flex;
-    flex-direction: column;
-}
-.cmtbox{
-    /* padding-left: 20px; */
-/* border: 1px solid red; */
-    display: flex;
-    /* flex-direction: column; */
-    
-    margin-top: 20px;
-    margin-left: 40px;
-    
-}
-.about{
-    padding-left: 20px;
-}
-.signup{
-    height: 30vh;
-    width: 100vw;
-    background-color: rgb(29, 29, 151);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* padding-left: 5%; */
-}
-.para{
-    width: 60%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
-    /* margin-left: -40px; */
-    padding-left: 5%;
-}
-.para h2 {
-    font-weight: 800;
-    font-size: x-large;
-    color: white;
-}
-.para p{
-    font-weight: 500;
-    color: azure;
-    font-size: larger;
-    margin-top: -5px;
-}
-.input{
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.input input{
-    width: 250px;
-    height: 30px;
-    padding-right: 10%;
-}
-.input button{
-    width: 100px;
-    height: 34px;
-    background-color: rgb(4, 255, 222);
-    color: white;
-    border: none;
-    
-}
-footer{
-    margin-top: 30px;
-    background-color:rgb(244, 248, 250);
-    display: flex;
-
-    height: 30vh;
-    /* border: 1px solid red; */
-}
-.footlogo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* border: 1px solid red; */
-    width: 25%;
-    height: 100%;
-}
-.footlogo h1{
-    padding: 10px 0px;
-}
-.footlogo p{
-    padding: 7px 0px;
-}
-.footsec{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* border: 1px solid red; */
-    width: 20%;
-    height: 100%;
-}
-.footsec h1{
-    padding: 10px 0px;
-}
-.footsec p{
-    font-size: 18px;
-    padding: 7px 0px;}
-.footfour{
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* border: 1px solid red; */
-    width: 35%;
-}
-.footfour p{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.pp{
-    display: flex;
-    justify-content: center;
-    height: 15%;
-    width: 100%;
-    /* border: 1px solid green; */
-}
-.eee{
-    /* border: 1px solid green; */
-    width: 35%;
-    height: 100%;
-}
-.rrr{
-    /* border: 1px solid green; */
-    width: 35%;
-    height: 100%;
-}
-.eee img{
-    height: 100%;
-    width: 100%;
-}
-.rrr img{
-    height: 100%;
-    width: 100%;
-}
-.footfour .last{
-    margin-top: 20px;
-}
-footer{
-    box-shadow: 0px -4px 10px gray;
+    width: 37vw;
+    height: 56vh;
 }
