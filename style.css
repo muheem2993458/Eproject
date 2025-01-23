@@ -132,14 +132,15 @@ ul li a:hover{
 .maincard{
     margin-top: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
-    height: 100vh;
+    height: 75vh;
    
 }
+
 .cardinside{
     margin-left: 10px;
-    width: 33%;
+    width: 30%;
     height: 100%;
     border: 1px solid black;
     border-radius: 10px;
@@ -170,20 +171,20 @@ hr{
 .card_img img{
     border-radius: 9px;
     display: inline-block;
-    margin:auto 25px;
-    height:65vh ;
-    width: 90%
+    margin:auto 50px;
+    height:42vh ;
+    width: 80%
     ;
 }
 .ratings {
     font-size: 30px;
     text-align: center;
     height: 5vh;
-    margin: 2px;
+    /* margin: 2px; */
     /* border: 1px solid red; */
     padding-top: 0px;
     padding-left: 35px;
-    color: goldenrod;
+    color: rgb(249, 190, 39);
 }
 .cardend{
     width: 100%;
@@ -242,37 +243,6 @@ transition: 0.3s;
     font-size: 30px;
 }
 
-.loader_main {
-    width: 100%;
-    text-align: center;
-    margin-top: 40px;
-}
-
-.loader {
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #414744;
-    border-right: 16px solid #f26522;
-    border-bottom: 16px solid #414744;
-    border-left: 16px solid #f26522;
-    width: 120px;
-    height: 120px;
-    
-
-    animation: spin 6s linear infinite;
-    margin: 0 auto;
-}
-
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
- 
 
 
 .gallery_mcard{
