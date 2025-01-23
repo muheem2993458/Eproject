@@ -102,13 +102,13 @@ body{
 .form{
     
     padding-left: 30px;
-    padding-top:30px ;
+    padding-top:10px ;
     /* justify-content: center; */
     /* align-items: center; */
     /* padding-top: 20px; */
     display: flex;
     flex-direction: column;
-    height: 83%;
+    height: 94%;
     width: 93%;
     /* border: 1px solid red; */
 }
@@ -117,9 +117,10 @@ body{
     color: grey;
 }
 .form input{
+    border-radius: 30px;
     margin-top: 20px;
     width: 40vh;
-    height: 3vh;
+    height: 6vh;
     background-color: white;
     border: 1px solid black;
 }
@@ -139,10 +140,10 @@ body{
 form{
     
     border-radius: 15px;
-    box-shadow: 10px 5px 10px rgb(92, 92, 92);
+    /* box-shadow: 10px 5px 10px rgb(92, 92, 92); */
     background-color: white;
     padding-left: 20px;
     border: 1px solid black;
     width: 37vw;
-    height: 56vh;
+    height: 63vh;
 }
