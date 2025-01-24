@@ -1,0 +1,114 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Container to center content */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* FAQ Section Styling */
+.faq {
+    margin-top: 20px;
+}
+
+/* Question Styling */
+.question h2 {
+    font-size: 1.6em;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #e2e2e2;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.question h2:hover {
+    background-color: #d1d1d1;
+}
+
+/* Answer Styling */
+.answer {
+    display: none;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+    border-left: 5px solid #3498db;
+}
+
+/* Answer Display Logic (Optional) */
+.question.active .answer {
+    display: block;
+}
+
+/* Comment Box Section Styling */
+.comment-box {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-box h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.comment-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-box label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.comment-box input,
+.comment-box textarea {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-box button {
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-box button:hover {
+    background-color: #2980b9;
+}
