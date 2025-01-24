@@ -2,6 +2,10 @@ body{
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
+    
+}
+*{
+    font-family: Algerian, serif;
 }
 /* banner works starts here */
 .bannerr{
@@ -69,46 +73,83 @@ ul li a:hover{
     font-size: 20px;
     width: 60px;
 }
-
 .boxe {
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
     height: 25vh;
     opacity: 0;
-    transition: opacity 0.7s ease-out,transform 0.7s ease-out ;
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
     transform: translateY(100px);
 }
 
-.boxe.visible{
-opacity: 1;
-transform: translateY(0);
+.boxe.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-
-@keyframes fade-inout{
-0%{opacity: 0;}
-100%{opacity: 1;}
-}    
+@keyframes fade-inout {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
 .box {
     box-shadow: 10px 10px 5px grey;
     text-align: center;
     width: 14vw;
-    height: 80%;
-    
-
+    height: 90%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    position: relative; /* To control box shadow and make sure it’s applied properly */
 }
-.box a{
+
+.box a {
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 22vh;
+    color: #f0f0f0;
     text-decoration: none;
-    color: #000;
+    z-index: 1; /* Keeps the link text above the box shadow */
 }
 
-.box img {
-    height: 80%;
-    width: 80%;
+#box1 {
+    background-image: url(BRASS\ HAND.jpg);
+    background-size: cover;
+}
+#box2 {
+    background-image: url(CANDLE\ HAND.jpg);
+    background-size: cover;
+}
+#box3 {
+    background-image: url(brrrrrrrrrrrr.jpg);
+    background-size: cover;
+}
+#box4 {
+    background-image: url(FRAME\ HAND.jpg);
+    background-size: cover;
+}
+#box5 {
+    background-image: url(TABLE\ WARES.jpg);
+    background-size: cover;
+}
+#box6 {
+    background-image: url(WOOD\ HANDI.jpg);
+    background-size: cover;
+}
+
+.box:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Slightly scale up */
+    opacity: 0.9; /* Slightly fade the box to highlight the hover effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add more prominent shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+/* Optional: You can add a light blur effect to enhance the hover */
+.box:hover a {
+    color: #fff; /* Slight color change to make text pop on hover */
 }
 
 .feature {
@@ -222,6 +263,17 @@ hr{
     height:42vh ;
     width: 80%
     ;
+    cursor: pointer;
+}
+/* .card_img img:hover{
+    transform: scale(0.9);
+    transition: transform 0.3s ease ;
+    
+} */
+.cardinside:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease ;
+
 }
 .ratings {
     font-size: 30px;
