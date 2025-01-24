@@ -11,6 +11,22 @@ body {
     background-color: #f4f4f4;
     padding: 20px;
 }
+li{
+    margin-left:40px ;
+    font-size: 20px;
+}
+
+ul li a:hover{
+    transition: all 0.5s;
+
+    border-radius: 20px;
+    background-color: rgba(255, 196, 124, 0.877);
+}
+.cart{
+    padding-left: 30px;
+    font-size: 20px;
+    width: 60px;
+}
 
 /* Container to center content */
 .container {
