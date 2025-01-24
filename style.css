@@ -1,0 +1,30 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.banner{
+    width: 100vw;
+    height: 60vh;
+    border: 1px black;
+    display: flex;
+    background-image: url(./modern-low-mahogany-chest-drawers_1091270-1547.jpg);
+    background-size: cover;
+    justify-content: flex-start;
+}
+.banner h1{
+    font-size: 40px;
+    font-weight: 10%;
+    color: rgb(250, 248, 250);
+  text-align: end;
+  margin-right: 10%;
+  text-shadow: 15px 15px 15px rgb(39, 38, 36);
+    /* display: flex;; */
+}
+
+.gallery h2{
+    font-size: 40px;
+    font-weight: 10%;
+    color: rgb(247, 246, 246);
+    background-color: rgb(121, 105, 52);
+    text-align: center;
+}
