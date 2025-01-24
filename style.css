@@ -69,21 +69,36 @@ ul li a:hover{
     font-size: 20px;
     width: 60px;
 }
+
 .boxe {
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* border: 1px solid black; */
+    
     height: 25vh;
+    opacity: 0;
+    transition: opacity 0.7s ease-out,transform 0.7s ease-out ;
+    transform: translateY(100px);
 }
+
+.boxe.visible{
+opacity: 1;
+transform: translateY(0);
+}
+
+
+@keyframes fade-inout{
+0%{opacity: 0;}
+100%{opacity: 1;}
+}    
 
 .box {
     box-shadow: 10px 10px 5px grey;
     text-align: center;
     width: 14vw;
     height: 80%;
-    /* border: 3px solid green; */
+    
 
 }
 .box a{
@@ -119,14 +134,30 @@ ul li a:hover{
 
 
 
-/* cards work start here */
+
 .card_head{
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 237px;
-    /* border: 1px solid #000000; */
+
+    opacity: 0;
+    transition: opacity 0.7s ease-out,transform 0.7s ease-out ;
+    transform: translateY(100px);
 }
+
+
+
+.card_head.visible{
+opacity: 1;
+transform: translateY(0);
+}
+
+
+@keyframes fade-inout{
+0%{opacity: 0;}
+100%{opacity: 1;}
+}    
 
 
 .maincard{
@@ -171,7 +202,7 @@ ul li a:hover{
     height: 40px;
 margin-top: 8px;
 padding: 0%;
-    /* border: 1px solid #000000; */
+    
 }
 .card
 hr{
@@ -180,7 +211,7 @@ hr{
 }
 .cardamount{
     margin-top: 10px;
-    /* text-align: center; */
+    
     display: flex;
     justify-content: center;
 }
@@ -196,8 +227,8 @@ hr{
     font-size: 30px;
     text-align: center;
     height: 5vh;
-    /* margin: 2px; */
-    /* border: 1px solid red; */
+    
+    
     padding-top: 0px;
     padding-left: 35px;
     color: rgb(249, 190, 39);
@@ -207,14 +238,14 @@ hr{
     height: 19%;
     display: flex;
     
-    /* border: 1px solid #000; */
+    
     
 }
 .buy{
-/* margin-top: 20px; */
+
 margin-left: 20px;
 width: 70%;
-/* border: 1px solid #000; */
+
 height: 80%;
 }
 .buy a{
@@ -238,14 +269,14 @@ transition: 0.3s;
 .buy a:hover{
     transition: 0.5s;
     color: #000;
-    /* font-size: 30px; */
+    
 }
 .seemore{
     width: 30%;
-    /* margin-top: 20px; */
+    
     margin-left: 20px;
 
-    /* border: 1px solid #000; */
+    
     height: 80%;
 }
 .seemore a{

@@ -4,7 +4,11 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Home Decor</title>
+
+   <!-- favicon -->
+
+<link  rel="icon" type="image/png" href="favicon.png">
 
    <!-- style sheet link -->
 
@@ -116,8 +120,6 @@
           <a href="">Lorem</a>
       </div>
   </div>
-
-
    <div class="feature">
       <h1>Featured Products</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -819,6 +821,40 @@
    $(document).ready(function() {
   function checkVisibility() {
     $('.maincard').each(function() {
+      var cardTop = $(this).offset().top;
+      var cardBottom = cardTop + $(this).outerHeight();
+      var windowTop = $(window).scrollTop();
+      var windowBottom = windowTop + $(window).height();
+
+      if (cardBottom > windowTop && cardTop < windowBottom) {
+        $(this).addClass('visible');
+      }
+    });
+  }
+
+  $(window).on('scroll', checkVisibility);
+  checkVisibility();
+});
+   $(document).ready(function() {
+  function checkVisibility() {
+    $('.boxe').each(function() {
+      var cardTop = $(this).offset().top;
+      var cardBottom = cardTop + $(this).outerHeight();
+      var windowTop = $(window).scrollTop();
+      var windowBottom = windowTop + $(window).height();
+
+      if (cardBottom > windowTop && cardTop < windowBottom) {
+        $(this).addClass('visible');
+      }
+    });
+  }
+
+  $(window).on('scroll', checkVisibility);
+  checkVisibility();
+});
+   $(document).ready(function() {
+  function checkVisibility() {
+    $('.card_head').each(function() {
       var cardTop = $(this).offset().top;
       var cardBottom = cardTop + $(this).outerHeight();
       var windowTop = $(window).scrollTop();
