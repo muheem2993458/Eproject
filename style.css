@@ -3,15 +3,29 @@
 
 }
 body{
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     overflow-x: hidden;
 }
+li{
+    margin-left:40px ;
+    font-size: 20px;
+}
+ul li a:hover{
+    transition: all 0.5s;
 
+    border-radius: 20px;
+    background-color: rgba(255, 196, 124, 0.877);
+}
+.cart{
+    padding-left: 30px;
+    font-size: 20px;
+    width: 60px;
+}
  .main{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 98vh;
     width: 99vw;
 }
@@ -117,6 +131,7 @@ body{
     color: grey;
 }
 .form input{
+    text-align: center;
     border-radius: 30px;
     margin-top: 20px;
     width: 40vh;
@@ -137,7 +152,7 @@ body{
     background-color: black;
     font-size: 24px;
 }
-form{
+.form form{
     
     border-radius: 15px;
     /* box-shadow: 10px 5px 10px rgb(92, 92, 92); */
@@ -146,4 +161,89 @@ form{
     border: 1px solid black;
     width: 37vw;
     height: 63vh;
+}
+
+/* footer section starts here */
+
+footer{
+    margin-top: 60px;
+    background-color:rgb(244, 248, 250);
+    display: flex;
+
+    height: 40vh;
+    /* border: 1px solid red; */
+}
+.footlogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    width: 25%;
+    height: 100%;
+}
+.footlogo h1{
+    padding: 10px 0px;
+}
+.footlogo p{
+    padding: 7px 0px;
+}
+.footsec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    width: 20%;
+    height: 100%;
+}
+.footsec h1{
+    padding: -2px 0px;
+}
+.footsec p{
+    font-size: 18px;
+    padding: -2px 0px;}
+.footfour{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    width: 35%;
+}
+.footfour p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pp{
+    display: flex;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    /* border: 1px solid green; */
+}
+.eee{
+    /* border: 1px solid green; */
+    width: 35%;
+    height: 50px;
+}
+.rrr{
+    /* border: 1px solid green; */
+    width: 35%;
+    height: 50px;
+}
+.eee img{
+    height: 100%;
+    width: 100%;
+}
+.rrr img{
+    height: 100%;
+    width: 100%;
+}
+.footfour .last{
+    margin-top: 20px;
+}
+footer{
+    box-shadow: 0px -4px 10px gray;
 }
