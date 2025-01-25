@@ -134,6 +134,11 @@ ul li a:hover{
     background-image: url(TABLE\ WARES.jpg);
     background-size: cover;
 }
+/* @media (max-width:800px){
+    .maincard{
+        display: flex;
+        flex-direction: column;
+    } */
 #box6 {
     background-image: url(WOOD\ HANDI.jpg);
     background-size: cover;
@@ -199,11 +204,198 @@ transform: translateY(0);
 0%{opacity: 0;}
 100%{opacity: 1;}
 }    
-
-
-.maincard{
+.maincard {
     margin-top: 50px;
     display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 75vh;
+    opacity: 0;
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    transform: translateY(100px);
+}
+
+.maincard.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fade-inout {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.cardinside {
+    margin-left: 10px;
+    width: 30%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.cardtext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin-top: 8px;
+    padding: 0;
+}
+
+.card hr {
+    margin: 0;
+    padding: 0;
+}
+
+.cardamount {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.card_img img {
+    border-radius: 9px;
+    display: inline-block;
+    margin: auto 50px;
+    height: 42vh;
+    width: 80%;
+    cursor: pointer;
+}
+
+/* .card_img img:hover {
+    transform: scale(0.9);
+    transition: transform 0.3s ease ;
+} */
+.cardinside:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.ratings {
+    font-size: 30px;
+    text-align: center;
+    height: 5vh;
+    padding-top: 0;
+    padding-left: 35px;
+    color: rgb(249, 190, 39);
+}
+
+.cardend {
+    width: 100%;
+    height: 19%;
+    display: flex;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .d-block{
+        margin-left: 249px !important;
+    }
+    .cardinside {
+        width: 40%; /* Adjust card width on medium screens */
+    }
+
+    .card_img img {
+        height: 35vh; /* Reduce image height on medium screens */
+        width: 75%;  /* Adjust width for images */
+    }
+}
+
+@media (max-width: 992px) {
+    .d-block{
+        margin-left: 188px !important;
+    }
+    .maincard {
+        
+        flex-direction: row;
+        flex-wrap: wrap-reverse; /* Stack the cards vertically */
+        height: auto; 
+        /* width: 60vw;*/
+        align-items: center; /* Center the content */
+    }
+
+    .cardinside {
+        width: 80%; /* Take up more width for each card */
+        margin-left: 0; /* Remove the margin on smaller screens */
+        margin-bottom: 20px;
+        height: 80vh; /* Add space between cards */
+    }
+
+    .card_img img {
+        height: 40vh; /* Adjust image height */
+        width: 86%;  /* Adjust image width */
+    }
+
+    .cardtext {
+        height: 50px; /* Adjust card text height */
+    }
+
+    .ratings {
+        font-size: 24px; /* Adjust font size for ratings */
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .d-block{
+        margin-left: 120px !important;
+    }
+    .maincard {
+        flex-direction: column; /* Stack the cards vertically */
+        height: auto; /* Remove the fixed height */
+        align-items: center; /* Center the content */
+    }
+    .cardinside {
+        width: 50%; /* Adjust width to fit smaller screens */
+    }
+
+    .card_img img {
+        height: 40vh;
+        width: 75%;  /* Ensure image fills the card width */
+    }
+
+    .ratings {
+        font-size: 20px; /* Make rating text smaller */
+    }
+
+    .maincard {
+        margin-top: 20px; /* Less margin at the top */
+    }
+}
+
+@media (max-width: 480px) {
+    .d-block{
+        margin-left: 93px !important;
+    }
+    .cardinside {
+        width: 100%; /* Make cards full-width on very small screens */
+        margin-bottom: 15px; /* Space between cards */
+    }
+
+    .card_img img {
+        height: 35vh; /* Further reduce image size on very small screens */
+        width: 75%;
+    }
+
+    .ratings {
+        font-size: 18px; /* Reduce rating font size */
+    }
+
+    .cardtext {
+        height: 40px; /* Adjust text height */
+    }
+}
+
+
+/* .maincard{
+    margin-top: 50px;
+    display: flex;
+    
     justify-content: space-evenly;
     width: 100%;
     height: 75vh;
@@ -264,13 +456,9 @@ hr{
     width: 80%
     ;
     cursor: pointer;
-}
-/* .card_img img:hover{
-    transform: scale(0.9);
-    transition: transform 0.3s ease ;
-    
 } */
-.cardinside:hover{
+
+/* .cardinside:hover{
     transform: scale(1.1);
     transition: transform 0.3s ease ;
 
@@ -292,7 +480,7 @@ hr{
     
     
     
-}
+} */
 .buy{
 
 margin-left: 20px;
@@ -344,7 +532,7 @@ transition: 0.3s;
 
 
 
-.gallery_mcard{
+/* .gallery_mcard{
     
     border-radius: 40px;
     
@@ -388,149 +576,93 @@ transition: 0.3s;
     font-weight: 600;
     border-radius: 10px;
     
-}
-.reveiw{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-.form_main{
-    padding-left: 200px;
-    /* border: 2px solid red; */
-    width: 99vw;
+} */
+.gallery_mcard {
+    border-radius: 40px;
+    background-image: url(ss.png);
+    /* opacity: 0.85; */
+    background-size: cover;
+    height: 70vh;
+    width: 95%;
+    margin-left: 45px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
+    transition: all 0.2s;
 }
 
-.formee{
-    padding-left: 30px;
-    padding-top:30px ;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* padding-top: 20px; */
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 50%;
-    /* border: 1px solid red; */
+.gallery_mcard button {
+    cursor: pointer;
+    background-color: rgb(255, 211, 166);
+    height: 60px;
+    width: 200px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.2s;
 }
 
-
-.formee p{
-    font-size: 20px;
-    color: grey;
-}
-.formee input{
-    margin-top: 20px;
-    width: 500px;
-    height: 40px;
-    background-color: white;
-    border: 1px solid black;
-}
-.formee button{
-    height: 40px;
-    width: 508px;
-    color: white;
-    background-color: black;
-    font-size: 24px;
-}
-#hehe{
-    width: 493px;
-    /* height: 20px; */
-}
-.formee form{
-    box-shadow: 10px 5px 10px rgb(92, 92, 92);
-    background-color: white;
-    padding-left: 20px;
-    border: 1px solid black;
-    width: 540px;
-    height: 490px;
+.gallery_mcard a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
 }
 
+.gallery_mcard a:hover {
+    color: #151515;
+    cursor: pointer;
+}
 
-/* footer section starts here */
-
-footer{
-    margin-top: 60px;
-    background-color:rgb(244, 248, 250);
-    display: flex;
-
-    height: 40vh;
-    /* border: 1px solid red; */
-}
-.footlogo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* border: 1px solid red; */
-    width: 25%;
-    height: 100%;
-}
-.footlogo h1{
-    padding: 10px 0px;
-}
-.footlogo p{
-    padding: 7px 0px;
-}
-.footsec{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* border: 1px solid red; */
-    width: 20%;
-    height: 100%;
-}
-.footsec h1{
-    padding: -2px 0px;
-}
-.footsec p{
-    font-size: 18px;
-    padding: -2px 0px;}
-.footfour{
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* border: 1px solid red; */
-    width: 35%;
-}
-.footfour p{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.pp{
-    display: flex;
-    justify-content: center;
-    height: 15%;
-    width: 100%;
-    /* border: 1px solid green; */
-}
-.eee{
-    /* border: 1px solid green; */
-    width: 35%;
+.gallery_mcard button:hover {
+    cursor: pointer;
+    background-color: rgb(245, 202, 159);
     height: 50px;
+    width: 190px;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 10px;
 }
-.rrr{
-    /* border: 1px solid green; */
-    width: 35%;
-    height: 50px;
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .gallery_mcard {
+        height: 60vh; /* Reduce height on medium screens */
+        margin-left: 20px; /* Decrease margin */
+    }
+
+    .gallery_mcard button {
+        width: 180px; /* Reduce button width */
+        height: 50px; /* Adjust button height */
+        font-size: 18px; /* Adjust font size */
+    }
 }
-.eee img{
-    height: 100%;
-    width: 100%;
+
+@media (max-width: 992px) {
+    .gallery_mcard {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        height: 50vh; /* Reduce card height */
+        margin-left: 0; /* Remove left margin */
+        justify-content: center; /* Align items to the start */
+        align-items: center; /* Center content */
+    }
+
+    .gallery_mcard button {
+        width: 170px; /* Adjust button width */
+        height: 45px; /* Adjust button height */
+        font-size: 16px; /* Adjust button text size */
+    }
 }
-.rrr img{
-    height: 100%;
-    width: 100%;
+
+@media (max-width: 768px) {
+    .gallery_mcard {
+        height: 40vh; /* Reduce height even more on small screens */
+        width: 90%; /* Make the card width more flexible */
+        margin-left: 10px; /* Smaller margin */
+    }
 }
-.footfour .last{
-    margin-top: 20px;
-}
-footer{
-    box-shadow: 0px -4px 10px gray;
-}
+    .gallery_mcard button {
+        width: 160px; /* Adjust button width */
+        height: 40px; /* Adjust button height */
+        font-size: 15
+    }
 
