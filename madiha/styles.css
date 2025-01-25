@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    padding: 20px;
+    padding: 0px;
 }
 li{
     margin-left:40px ;
@@ -30,13 +30,12 @@ ul li a:hover{
 
 /* Container to center content */
 .container {
-    margin-top: 60px;
     width: 80%;
     max-width: 900px;
     margin: 0 auto;
     background-color: white;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Title Styling */
@@ -128,4 +127,90 @@ h1 {
 
 .comment-box button:hover {
     background-color: #2980b9;
+}
+#faq1 , #faq2 , #faq3 , #faq4{
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 80px;
+    background-color:rgb(244, 248, 250);
+    display: flex;
+box-shadow: 0px -5px 10px grey;
+    height: 30vh;
+    /* border: 1px solid red; */
+}
+.footlogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    width: 25%;
+    height: 100%;
+}
+.footlogo h1{
+    padding: 10px 0px;
+}
+.footlogo p{
+    padding: 0px 0px;
+}
+.footsec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    width: 20%;
+    height: 100%;
+}
+.footsec h1{
+    padding: 0px 0px;
+}
+.footsec p{
+    margin-top: -10px;
+    font-size: 18px;
+    padding: 0px 0px;}
+.footfour{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    width: 35%;
+}
+.footfour p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pp{
+    display: flex;
+    justify-content: center;
+    height: 15%;
+    width: 100%;
+    /* border: 1px solid green; */
+}
+.eee{
+    /* border: 1px solid green; */
+    width: 35%;
+    height: 100%;
+}
+.rrr{
+    /* border: 1px solid green; */
+    width: 35%;
+    height: 100%;
+}
+.eee img{
+    height: 100%;
+    width: 100%;
+}
+.rrr img{
+    height: 100%;
+    width: 100%;
+}
+.footfour .last{
+    margin-top: 20px;
+}
+footer{
+    box-shadow: 0px -4px 10px gray;
 }
