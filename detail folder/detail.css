@@ -92,7 +92,7 @@ ul li a:hover{
 }
 
 .card-button {
-    background-color: #3498db;
+    background-color: rgb(230, 161, 93);
     color: white;
     border: none;
     padding: 12px 25px;
@@ -101,9 +101,19 @@ ul li a:hover{
     font-size: 1rem;
     transition: background-color 0.3s ease;
 }
+.card-button a {
+    text-decoration: none;
+    color: rgb(255, 250, 244);
+}
+.card-button a:hover{
+
+   
+        color: rgb(232, 232, 232);
+    
+}
 
 .card-button:hover {
-    background-color: #2980b9;
+    background-color: rgb(255, 192, 130);
 }
 
 /* Media Queries */
