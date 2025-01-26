@@ -243,6 +243,7 @@ footer {
 }
 
 .footer-section ul {
+    padding-left: 0px;
     list-style: none;
     margin-bottom: 15px;
 }
