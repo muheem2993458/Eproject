@@ -9,7 +9,7 @@ body{
 }
 /* banner works starts here */
 .bannerr{
-    background-image: url(wall-art-7822529_1280.jpg);
+    background-image: url(/imges/wall-art-7822529_1280.jpg);
     background-size: cover;
     background-repeat: none;
     width: 100%;
@@ -109,28 +109,28 @@ ul li a:hover{
 }
 
 #box1 {
-    background-image: url(BRASS\ HAND.jpg);
+    background-image: url(/imges/BRASS\ HAND.jpg);
     background-size: cover;
 }
 #box2 {
-    background-image: url(CANDLE\ HAND.jpg);
+    background-image: url(/imges/CANDLE\ HAND.jpg);
     background-size: cover;
 }
 #box3 {
-    background-image: url(brrrrrrrrrrrr.jpg);
+    background-image: url(/imges/brrrrrrrrrrrr.jpg);
     background-size: cover;
 }
 #box4 {
-    background-image: url(FRAME\ HAND.jpg);
+    background-image: url(/imges/FRAME\ HAND.jpg);
     background-size: cover;
 }
 #box5 {
-    background-image: url(TABLE\ WARES.jpg);
+    background-image: url(/imges/TABLE\ WARES.jpg);
     background-size: cover;
 }
 
 #box6 {
-    background-image: url(WOOD\ HANDI.jpg);
+    background-image: url(/imges/WOOD\ HANDI.jpg);
     background-size: cover;
 }
 
@@ -417,7 +417,7 @@ transition: 0.3s;
 
 .gallery_mcard {
     border-radius: 40px;
-    background-image: url(ss.png);
+    background-image: url(/imges/ss.png);
     /* opacity: 0.85; */
     background-size: cover;
     height: 70vh;
