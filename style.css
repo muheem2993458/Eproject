@@ -496,7 +496,10 @@ transition: 0.3s;
 }
 
 /* Responsive adjustments */
-@media (max-width: 1200px) {
+@media (max-width: 1920px) {
+    .cardinside{
+        height: 68vh;
+    }
     .gallery_mcard {
         height: 60vh; /* Reduce height on medium screens */
         margin-left: 20px; /* Decrease margin */
@@ -509,7 +512,13 @@ transition: 0.3s;
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1366px) {
+    .cardinside{
+        height: 68vh;
+    }
+    .carousel-item img{
+margin-left: 238px;
+    }
     .gallery_mcard {
         flex-direction: column; /* Stack elements vertically on smaller screens */
         height: 50vh; /* Reduce card height */
@@ -526,6 +535,24 @@ transition: 0.3s;
 }
 
 @media (max-width: 768px) {
+    .carousel-item img{
+        margin-left: ;
+    }
+    .cardinside hr{
+        margin-top: 5px;
+        
+    }
+    .cardamount , h5{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .seemore{
+
+    }
+    .cardinside{
+        height: 81vh;
+    }
     .gallery_mcard {
         height: 40vh; /* Reduce height even more on small screens */
         width: 90%; /* Make the card width more flexible */
