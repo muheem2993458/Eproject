@@ -136,15 +136,15 @@ ul li a:hover{
 
 .box:hover {
     cursor: pointer;
-    transform: scale(1.1); /* Slightly scale up */
-    opacity: 0.9; /* Slightly fade the box to highlight the hover effect */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add more prominent shadow */
+    transform: scale(1.1); 
+    opacity: 0.9; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
     transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
 }
 
-/* Optional: You can add a light blur effect to enhance the hover */
+
 .box:hover a {
-    color: #fff; /* Slight color change to make text pop on hover */
+    color: #fff; 
 }
 
 .feature {
@@ -257,10 +257,7 @@ transform: translateY(0);
     cursor: pointer;
 }
 
-/* .card_img img:hover {
-    transform: scale(0.9);
-    transition: transform 0.3s ease ;
-} */
+
 .cardinside:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
@@ -281,19 +278,20 @@ transform: translateY(0);
     display: flex;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1200px) {
+
+@media (max-width: 1366px) {
 
     .d-block{
         margin-left: 249px !important;
     }
     .cardinside {
-        width: 40%; /* Adjust card width on medium screens */
+        width: 40%; 
+        height: 62vh;
     }
 
     .card_img img {
-        height: 35vh; /* Reduce image height on medium screens */
-        width: 75%;  /* Adjust width for images */
+        height: 35vh; 
+        width: 75%;  
     }
 }
 
@@ -306,68 +304,36 @@ transform: translateY(0);
     }
     .maincard {
         
-        flex-direction: row;
-        flex-wrap: wrap-reverse; /* Stack the cards vertically */
+        flex-direction: column;
+
         height: auto; 
-        /* width: 60vw;*/
-        align-items: center; /* Center the content */
+
+        align-items: center;
     }
 
     .cardinside {
-        width: 80%; /* Take up more width for each card */
-        margin-left: 0; /* Remove the margin on smaller screens */
+        width: 80%; 
+        margin-left: 0; 
         margin-bottom: 20px;
-        height: 80vh; /* Add space between cards */
     }
 
     .card_img img {
-        height: 40vh; /* Adjust image height */
-        width: 86%;  /* Adjust image width */
+        height: 27vh;
+        width: 66%;
+        margin-left: 126px;
     }
 
     .cardtext {
-        height: 50px; /* Adjust card text height */
+        height: 50px; 
     }
 
     .ratings {
-        font-size: 24px; /* Adjust font size for ratings */
+        font-size: 24px; 
         padding-left: 0;
     }
 }
 
-@media (max-width: 768px) {
-    .cardinside:hover {
-        transform: scale(0.9);
-        transition: transform 0.3s ease;
-    }
-    .box a{
-        font-size: 24px;
-    }
-    .d-block{
-        margin-left: 120px !important;
-    }
-    .maincard {
-        flex-direction: column; /* Stack the cards vertically */
-        height: auto; /* Remove the fixed height */
-        align-items: center; /* Center the content */
-    }
-    .cardinside {
-        width: 50%; /* Adjust width to fit smaller screens */
-    }
 
-    .card_img img {
-        height: 40vh;
-        width: 75%;  /* Ensure image fills the card width */
-    }
-
-    .ratings {
-        font-size: 20px; /* Make rating text smaller */
-    }
-
-    .maincard {
-        margin-top: 20px; /* Less margin at the top */
-    }
-}
 
 @media (max-width: 480px) {
     .box a{
@@ -377,21 +343,21 @@ transform: translateY(0);
         margin-left: 93px !important;
     }
     .cardinside {
-        width: 100%; /* Make cards full-width on very small screens */
-        margin-bottom: 15px; /* Space between cards */
+        width: 100%; 
+        margin-bottom: 15px; 
     }
 
     .card_img img {
-        height: 35vh; /* Further reduce image size on very small screens */
+        height: 35vh; 
         width: 75%;
     }
 
     .ratings {
-        font-size: 18px; /* Reduce rating font size */
+        font-size: 18px; 
     }
 
     .cardtext {
-        height: 40px; /* Adjust text height */
+        height: 40px; 
     }
 }
 
@@ -495,49 +461,13 @@ transition: 0.3s;
     border-radius: 10px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1920px) {
-    .cardinside{
-        height: 68vh;
-    }
-    .gallery_mcard {
-        height: 60vh; /* Reduce height on medium screens */
-        margin-left: 20px; /* Decrease margin */
-    }
 
-    .gallery_mcard button {
-        width: 180px; /* Reduce button width */
-        height: 50px; /* Adjust button height */
-        font-size: 18px; /* Adjust font size */
-    }
-}
 
-@media (max-width: 1366px) {
-    .cardinside{
-        height: 68vh;
-    }
-    .carousel-item img{
-margin-left: 238px;
-    }
-    .gallery_mcard {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
-        height: 50vh; /* Reduce card height */
-        margin-left: 0; /* Remove left margin */
-        justify-content: center; /* Align items to the start */
-        align-items: center; /* Center content */
-    }
 
-    .gallery_mcard button {
-        width: 170px; /* Adjust button width */
-        height: 45px; /* Adjust button height */
-        font-size: 16px; /* Adjust button text size */
-    }
-}
+
 
 @media (max-width: 768px) {
-    .carousel-item img{
-        margin-left: ;
-    }
+    
     .cardinside hr{
         margin-top: 5px;
         
@@ -547,32 +477,127 @@ margin-left: 238px;
         margin-bottom: 0px;
     }
 
-    .seemore{
-
-    }
+   
     .cardinside{
         height: 81vh;
     }
     .gallery_mcard {
-        height: 40vh; /* Reduce height even more on small screens */
-        width: 90%; /* Make the card width more flexible */
-        margin-left: 10px; /* Smaller margin */
+        height: 40vh;
+        width: 90%; 
+        margin-left: 10px; 
     }
 }
     .gallery_mcard button {
-        width: 160px; /* Adjust button width */
-        height: 40px; /* Adjust button height */
+        width: 160px;
+        height: 40px;
         font-size: 15
     }
+    @media (max-width: 375px) {
+        
+        .bannerr {
+            height: 60vh; 
+        }
+    
+        .buy_now {
+            width: 120px; 
+            font-size: 18px;
+        }
+    
+        .textt {
+            font-size: 16px;
+        }
+    
+        .box {
+            width: 45vw; 
+        }
+    
+        .box a {
+            font-size: 24px;
+        }
+    
+        .maincard {
+            flex-direction: column;
+            height: auto; 
+        }
+    
+        .cardinside {
+            width: 90%; 
+            height: auto;
+        }
+    
+        .card_img img {
+            width: 70%; 
+            height: 30vh;
+            margin-left: 48px;
+        }
+    
+        .buy_now {
+            width: 100px; 
+        }
+    
+        .seemore {
+            width: 100%; 
+            margin-left: 0;
+        }
+    }
+    
+    @media (max-width: 360px) {
+        
+        .bannerr {
+            height: 55vh;
+        }
+    
+        .buy_now {
+            width: 100px; 
+            font-size: 16px;
+        }
+    
+        .textt {
+            font-size: 14px; 
+        }
+    
+        .box {
+            width: 40vw; 
+        }
+    
+        .box a {
+            font-size: 20px;
+        }
+    
+        .maincard {
+            flex-direction: column;
+            height: auto;
+        }
+    
+        .cardinside {
+            width: 100%; 
+            margin-bottom: 10px; 
+        }
+    
+        .card_img img {
+            width: 70%; 
+            height: 25vh; 
+        }
+    
+        .buy_now {
+            width: 80px; 
+        }
+    
+        .seemore {
+            width: 100%; 
+            margin-left: 0; 
+        }
+    }
+    
 
-/* Basic Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and general layout */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -601,12 +626,12 @@ header {
     color: #fff;
 }
 
-/* Default footer styles */
 
 
 
 
-/* Gallery Styles */
+
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -627,17 +652,15 @@ header {
     transform: scale(1.05);
 }
 
-/* Reset some default styles */
-
-/* Reset some default styles */
 
 
-/* Footer styles */
+
+
 footer {
     margin-top: 20px;
     box-shadow: 2px -2px 10px black;
-    background-color: #fff;  /* White background */
-    color: #000;             /* Black text color */
+    background-color: #fff;  
+    color: #000;             
     padding: 40px 0;
     width: 100%;
 }
@@ -653,7 +676,7 @@ footer {
 
 
 
-/* Footer Section Styling */
+
 .footer-section {
     max-width: 300px;
 }
@@ -687,12 +710,12 @@ footer {
 
 .footer-section ul li a {
     text-decoration: none;
-    color: #000;  /* Black link text */
+    color: #000; 
     font-size: 0.9rem;
 }
 
 .footer-section ul li a:hover {
-    color: #f1c40f;  /* Hover effect color - gold/yellow */
+    color: #f1c40f; 
 }
 
 .newsletter-form {
@@ -722,7 +745,7 @@ footer {
     background-color: rgb(230, 181, 139);
 }
 
-/* Social Links */
+
 .social-links {
     display: flex;
     gap: 10px;
@@ -733,8 +756,7 @@ footer {
     text-decoration: none;
     color: #000000;
     padding: 10px;
-    /* background-color: #000; */
-    /* border-radius: 50%; */
+    
     width: 110px;
     height: 40px;
     display: flex;
@@ -746,11 +768,11 @@ footer {
 
 .social-icon:hover {
     border-radius: 20%;
-    background-color: peachpuff;  /* Hover effect color - gold/yellow */
+    background-color: peachpuff;  
     color: #000;
 }
 
-/* Footer Bottom */
+
 .footer-bottom {
     text-align: center;
     margin-top: 30px;
@@ -758,5 +780,5 @@ footer {
 }
 
 .footer-bottom p {
-    color: #555;  /* Light gray text for the bottom copyright */
+    color: #555;  
 }
