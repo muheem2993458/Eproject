@@ -1,0 +1,329 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 0px;
+}
+li{
+    margin-left:40px ;
+    font-size: 20px;
+}
+
+ul li a:hover{
+    transition: all 0.5s;
+
+    border-radius: 20px;
+    background-color: rgba(255, 196, 124, 0.877);
+}
+.cart{
+    padding-left: 30px;
+    font-size: 20px;
+    width: 60px;
+}
+
+/* Container to center content */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* FAQ Section Styling */
+.faq {
+    margin-top: 20px;
+}
+
+/* Question Styling */
+.question h2 {
+    font-size: 1.6em;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #e2e2e2;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.question h2:hover {
+    background-color: #d1d1d1;
+}
+
+/* Answer Styling */
+.answer {
+    display: none;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+    border-left: 5px solid #3498db;
+}
+
+/* Answer Display Logic (Optional) */
+.question.active .answer {
+    display: block;
+}
+
+/* Comment Box Section Styling */
+.comment-box {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-box h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.comment-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-box label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.comment-box input,
+.comment-box textarea {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-box button {
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: rgb(226, 159, 91);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-box button:hover {
+    background-color: rgb(235, 166, 106);
+}
+#faq1 , #faq2 , #faq3 , #faq4{
+    cursor: pointer;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+.navbar-nav li{
+    margin-left:40px ;
+    font-size: 20px;
+}
+ul li a:hover{
+    transition: all 0.5s;
+
+    border-radius: 20px;
+    background-color: rgba(255, 196, 124, 0.877);
+}
+.cart{
+    padding-left: 30px;
+    font-size: 20px;
+    width: 60px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: peachpuff;
+    color: #fff;
+}
+
+/* Default footer styles */
+
+
+
+
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item img {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Reset some default styles */
+
+/* Reset some default styles */
+
+
+/* Footer styles */
+footer {
+    margin-top: 20px;
+    box-shadow: 2px -2px 10px black;
+    background-color: #fff;  /* White background */
+    color: #000;             /* Black text color */
+    padding: 40px 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* Footer Section Styling */
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #000;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.footer-contact i {
+    margin-right: 8px;
+    color: #f1c40f;
+}
+
+.footer-section ul {
+    padding-left: 0px;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #000;  /* Black link text */
+    font-size: 0.9rem;
+}
+
+.footer-section ul li a:hover {
+    color: #f1c40f;  /* Hover effect color - gold/yellow */
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: peru;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.newsletter-form button:hover {
+    background-color: peachpuff;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    /* background-color: #000; */
+    /* border-radius: 50%; */
+    width: 110px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    border-radius: 20%;
+    background-color: peachpuff;  /* Hover effect color - gold/yellow */
+    color: #000;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.8rem;
+}
+
+.footer-bottom p {
+    color: #555;  /* Light gray text for the bottom copyright */
+}
