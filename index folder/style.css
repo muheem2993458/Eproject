@@ -199,7 +199,7 @@ transform: translateY(0);
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    height: 75vh;
+    height: 65vh;
     opacity: 0;
     transition: opacity 0.7s ease-out, transform 0.7s ease-out;
     transform: translateY(100px);
@@ -251,7 +251,7 @@ transform: translateY(0);
 .card_img img {
     border-radius: 9px;
     display: inline-block;
-    margin: auto 50px;
+    margin: auto 85px;
     height: 42vh;
     width: 80%;
     cursor: pointer;
@@ -368,23 +368,25 @@ transform: translateY(0);
 margin-left: 20px;
 width: 70%;
 
-height: 80%;
+height: 50%;
 }
 .buy a{
     text-decoration: none;
     color: peru;
+    font-size: 18px;
 }
 .buy_btn{
+    margin-bottom: 40px;
     background-color: rgba(255, 218, 185, 0.846);
     border-radius: 8px;
-    width: 80px;
-    height: 40px;
-    font-size: 30px;
+    width: 60px;
+    height: 35px;
+    font-size: 15px;
     
 }
 .buy_btn:hover{
-width:75px ;
-height: 37px ;
+width: 65px;
+height: 35px ;
 font-size: 10px;
 transition: 0.3s;
 }
@@ -394,14 +396,19 @@ transition: 0.3s;
     
 }
 .seemore{
+    margin-bottom: 40px;
+    
+    width: 60px;
+    height: 35px;
     width: 30%;
     
     margin-left: 20px;
-
+    
     
     height: 80%;
 }
 .seemore a{
+    font-size: 20px;
     color: peru;
     text-decoration: none;
 }
@@ -409,7 +416,7 @@ transition: 0.3s;
 .seemore a:hover{
     transition: 0.5s;
     color: #000;
-    font-size: 30px;
+    font-size: 23px;
 }
 
 
