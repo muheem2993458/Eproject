@@ -25,7 +25,7 @@ nav li a:hover{
 .main{
     margin-top: 0px;
     width: 100vw;
-    height: 248vh;
+    /* height: 248vh; */
     display: flex;
 }
 .item-1{
