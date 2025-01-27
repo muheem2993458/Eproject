@@ -10,6 +10,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #000000;
+    overflow-x: hidden;
 }
 .navbar-nav li{
     margin-left:40px ;

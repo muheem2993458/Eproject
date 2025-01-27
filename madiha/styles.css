@@ -7,6 +7,7 @@
 
 /* Body Styling */
 body {
+    overflow-x: hidden;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     padding: 0px;
