@@ -286,7 +286,7 @@ transform: translateY(0);
     }
     .cardinside {
         width: 40%; 
-        height: 62vh;
+        height: 62vh!important;
     }
 
     .card_img img {
@@ -528,13 +528,14 @@ transition: 0.3s;
         }
     
         .cardinside {
-            width: 90%; 
+            margin-left: 30px;
+            width: 90% !important; 
             height: auto;
         }
     
         .card_img img {
-            width: 70%; 
-            height: 30vh;
+            width: 70% !important; 
+            height: 30vh !important;
             margin-left: 48px;
         }
     
@@ -549,6 +550,10 @@ transition: 0.3s;
     }
     
     @media (max-width: 360px) {
+        .andar{
+            height: 10px;
+            width: 10px;
+        }
         
         .bannerr {
             height: 55vh;
@@ -572,18 +577,20 @@ transition: 0.3s;
         }
     
         .maincard {
+            
             flex-direction: column;
             height: auto;
         }
     
         .cardinside {
-            width: 100%; 
-            margin-bottom: 10px; 
+            /* margin-left: 30px; */
+            width: 100% !important; 
+            margin-bottom: 15px; 
         }
     
         .card_img img {
-            width: 70%; 
-            height: 25vh; 
+            width: 70% !important; 
+            height: 25vh!important; 
         }
     
         .buy_now {
