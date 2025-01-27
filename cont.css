@@ -204,7 +204,7 @@ body{
         margin-right: 20px;
        
         
-        height: 127vh;
+        height: 98vh;
         margin-top: 212px;
     }
     .main3 {
@@ -242,7 +242,7 @@ body{
     .main2 {
         margin-right: 10px;
         
-        height: 127vh;
+        height: 100vh;
         margin-top: 212px;
     }
     }
@@ -313,6 +313,7 @@ label {
 
 input,
 textarea {
+    height: 40px;
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
