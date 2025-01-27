@@ -30,16 +30,6 @@ body{
     height: 98vh;
     width: 99vw;
 }
-.main1{
-    border: 1px solid black;
-    position: relative;
-    left: 145px;
-    top: 12px;
-    height: 40vh;
-    width: 25vw;
-    border-radius: 25px;
-    background-color: rgb(255, 255, 255);
-}
 
 .main2{
     border-radius: 25px;
@@ -53,9 +43,9 @@ body{
 .main3{
     background-image: url(flat-lay-tropical-palm-leaves-yellow-copy-space-background-summer-concept.jpg);
     background-size: contain;
-        border-radius: 25px 0 0 25px;
-     border: 1px solid black;
-     height: 100%;
+    border-radius: 25px 0 0 25px;
+    border: 1px solid black;
+    height: 100%;
      width: 35%;
     }
     .main4{
@@ -65,11 +55,21 @@ body{
         height: 100%;
         width: 65%;
     }
+    .main1{
+        border: 1px solid black;
+        position: relative;
+        left: 145px;
+        top: 12px;
+        height: 40vh;
+        width: 25vw;
+        border-radius: 25px;
+        background-color: rgb(255, 255, 255);
+    }
     .location{
         display: flex;
-     /* border: 1px solid black; */
-     height: 8vh;
-     width: 100%;
+        /* border: 1px solid black; */
+        height: 8vh;
+        width: 100%;
      border-radius: 25px 25px 0 0;
     }
     .icon{
@@ -108,6 +108,7 @@ body{
     border: none;
     border-bottom: 1px solid black;
  }
+ 
 .h-top{
     margin-top: 30px;
     height: 6vh;
@@ -115,6 +116,160 @@ body{
     text-align: center;
 }
 
+/* Media Queries */
+@media only screen and (max-width: 1920px) {
+    .main2 {
+        margin-right: 100px;
+    }
+    .main3 {
+        width: 30%;
+    }
+    .main4 {
+        width: 70%;
+    }
+    .main1 {
+        width: 20vw;
+    }
+    .icon {
+        font-size: 35px;
+    }
+    .txt {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .main2 {
+        margin-right: 80px;
+    }
+    .main3 {
+        width: 35%;
+    }
+    .main4 {
+        width: 65%;
+    }
+    .main1 {
+        width: 22vw;
+    }
+    .icon {
+        font-size: 30px;
+    }
+    .txt {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer{
+        margin-top: 131px;
+    }
+    .main2 {
+        margin-right: 50px;
+        height: 117vh;
+        margin-top: 148px;
+        margin-bottom: 0;
+    }
+    .main3 {
+        width: 40%;
+    }
+    .main4 {
+        width: 60%;
+    }
+    .main1 {
+        width: 30vw;
+        left: 20px;
+        top: 10px;
+    }
+    .icon {
+        font-size: 25px;
+    }
+    .txt {
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+    .frm input {
+        width: 75%;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .location{
+        margin-top: 10px;
+    }
+    footer{
+        margin-top: 200px;
+    }
+    .main2 {
+        margin-right: 20px;
+       
+        
+        height: 127vh;
+        margin-top: 212px;
+    }
+    .main3 {
+        width: 50%;
+    }
+    .main4 {
+        width: 50%;
+    }
+    .main1 {
+        width: 80%;
+        left: 10px;
+        top: 8px;
+        height: 35vh;
+    }
+    .icon {
+        font-size: 20px;
+    }
+    .txt {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    .frm input {
+        width: 85%;
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .location{
+        margin-top: 10px;
+    }
+    footer{
+        margin-top: 200px;
+    }
+    .main2 {
+        margin-right: 10px;
+        
+        height: 127vh;
+        margin-top: 212px;
+    }
+    }
+    .main3 {
+        width: 30%;
+    }
+    .main4 {
+        width: 70%;
+    }
+    .main1 {
+        width: 29%;
+        left: 44px;
+        top: 1px;
+        height: 41vh;
+    }
+    
+    .icon {
+        font-size: 18px;
+    }
+    .txt {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .frm input {
+        width: 90%;
+        margin-left: 0;
+    }
 
 
 
@@ -178,7 +333,7 @@ textarea {
 /* Submit button */
 .submit-btn {
     padding: 12px 20px;
-    background-color: #f1c40f;
+    background-color: rgb(247, 192, 144);
     border: none;
     color: #fff;
     font-size: 1rem;
@@ -189,7 +344,7 @@ textarea {
 }
 
 .submit-btn:hover {
-    background-color: #e1b30f;
+    background-color: rgb(238, 156, 75);
 }
 
 /* Responsive Media Query */
@@ -298,7 +453,7 @@ footer {
 
 .newsletter-form button {
     padding: 10px 20px;
-    background-color: #f1c40f;
+    background-color: rgb(247, 192, 144);
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -307,7 +462,7 @@ footer {
 }
 
 .newsletter-form button:hover {
-    background-color: #e1b30f;
+    background-color: rgb(238, 156, 75);
 }
 
 /* Social Links */
